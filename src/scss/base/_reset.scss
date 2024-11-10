@@ -1,5 +1,17 @@
 html, body {
     height: 100%;
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+  
+    &::-webkit-scrollbar-track {
+        background: var(--black);
+    }
+  
+    &::-webkit-scrollbar-thumb {
+        background: var(--primary);
+        border-radius: 5px;
+    }
 }
 
 body {
