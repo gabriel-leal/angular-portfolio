@@ -39,6 +39,11 @@ export class ProjectsComponent {
       alt: "projeto de tela de login",
       site: "https://github.com/gabriel-leal/angular-lista-de-tarefas"
     },
+    {
+      src: "assets/img/projects/showalunos.png",
+      alt: "projeto de apresentação musical com compra de ingresso",
+      site: "https://showalunos.menezesdigital.com.br"
+    },
   ])
 
   public openSite(data: Iprojects) {
