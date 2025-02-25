@@ -17,7 +17,14 @@ export class ExperiencesComponent {
         strong: "web designer",
         p: "DriLean | Jan 2024 - abr 2024"
       },
-      text: "Foi um curto período em uma área que não gostei muito, por não ser a área que quero atuar, então resolvi sair e focar 100% nos meu estudos"
+      text: "Foi um período curto em uma área que não me identifiquei, pois não era o segmento em que desejo atuar. Por isso, decidi sair e dedicar-me integralmente aos meus estudos."
+    },
+    {
+      summary: {
+        strong: "Suporte Técnico",
+        p: "Softpool | FEV 2024 - Atual"
+      },
+      text: "Iniciei minha trajetória na área de programação como suporte técnico, realizando atualizações e correções no sistema, além da instalação e configuração do software, incluindo o banco de dados no SQL Server, executáveis no Windows e a parte web."
     }
   ])
 }

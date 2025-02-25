@@ -42,5 +42,10 @@ export class KnowledgeComponent {
       alt: 'Ícone de conhecimento de python',
       title: 'Python'
     },
+    // {
+    //   src: 'assets/icons/knowledge/docker.svg',
+    //   alt: 'Ícone de conhecimento de docker',
+    //   title: 'docker'
+    // },
   ])
 }
