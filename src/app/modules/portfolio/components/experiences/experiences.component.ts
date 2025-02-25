@@ -22,7 +22,7 @@ export class ExperiencesComponent {
     {
       summary: {
         strong: "Suporte Técnico",
-        p: "Softpool | FEV 2024 - Atual"
+        p: "Softpool | FEV 2025 - Atual"
       },
       text: "Iniciei minha trajetória na área de programação como suporte técnico, realizando atualizações e correções no sistema, além da instalação e configuração do software, incluindo o banco de dados no SQL Server, executáveis no Windows e a parte web."
     }
