@@ -40,6 +40,11 @@ export class ProjectsComponent {
       site: "https://github.com/gabriel-leal/angular-lista-de-tarefas"
     },
     {
+      src: "assets/img/projects/qrcode.png",
+      alt: "projeto acadêmico, gerador de Qr Code em python!",
+      site: "https://menezesdigital.com.br/qrcode"
+    },
+    {
       src: "assets/img/projects/showalunos.png",
       alt: "projeto de apresentação musical com compra de ingresso",
       site: "https://showalunos.menezesdigital.com.br"
