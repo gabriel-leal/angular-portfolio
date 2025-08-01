@@ -49,6 +49,11 @@ export class ProjectsComponent {
       alt: "projeto de apresentação musical com compra de ingresso",
       site: "https://showalunos.menezesdigital.com.br"
     },
+        {
+      src: "assets/img/projects/lojatenis.png",
+      alt: "projeto de Loja de tênis",
+      site: "https://github.com/gabriel-leal/loja-tenis"
+    },
   ])
 
   public openSite(data: Iprojects) {
