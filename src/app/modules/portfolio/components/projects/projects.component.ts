@@ -26,8 +26,8 @@ export class ProjectsComponent {
     },
     {
       src: "assets/img/projects/inscricaoevento.png",
-      alt: "Página sobre a inscrição de um evento",
-      site: "https://github.com/gabriel-leal/Inscricao-musical"
+      alt: "Inscrição de um evento musical",
+      site: "https://github.com/gabriel-leal/musical"
     },
     {
       src: "assets/img/projects/login.png",
