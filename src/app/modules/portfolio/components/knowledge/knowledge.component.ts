@@ -38,14 +38,19 @@ export class KnowledgeComponent {
       title: 'Angular'
     },
     {
+      src: 'assets/icons/knowledge/Nodejs.svg',
+      alt: 'Ícone de conhecimento de NodeJs',
+      title: 'NodeJs'
+    },
+    {
       src: 'assets/icons/knowledge/python.svg',
       alt: 'Ícone de conhecimento de python',
       title: 'Python'
     },
-    // {
-    //   src: 'assets/icons/knowledge/docker.svg',
-    //   alt: 'Ícone de conhecimento de docker',
-    //   title: 'docker'
-    // },
+    {
+      src: 'assets/icons/knowledge/docker.png',
+      alt: 'Ícone de conhecimento de docker',
+      title: 'docker'
+    },
   ])
 }
