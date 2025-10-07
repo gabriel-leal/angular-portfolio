@@ -22,9 +22,16 @@ export class ExperiencesComponent {
     {
       summary: {
         strong: "Suporte Técnico",
-        p: "Softpool | FEV 2025 - Atual"
+        p: "Softpool | FEV 2025 - SET 2025"
       },
       text: "Iniciei minha trajetória na área de programação como suporte técnico, realizando atualizações e correções no sistema, além da instalação e configuração do software, incluindo o banco de dados no SQL Server, executáveis no Windows e a parte web."
+    },
+    {
+      summary: {
+        strong: "desenvolvedor Vb6",
+        p: "T&TSistemas | SET 2025 - Atual"
+      },
+      text: "Atualmente, atuo como desenvolvedor Vb6, focado na manutenção e aprimoramento de um sistema legado. Estou empenhado em aprender novas tecnologias para evoluir minha carreira e contribuir de maneira mais significativa para a equipe."
     }
   ])
 }
