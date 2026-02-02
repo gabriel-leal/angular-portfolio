@@ -31,12 +31,12 @@ export class ProjectsComponent {
     },
     {
       src: "assets/img/projects/login.png",
-      alt: "projeto de tela de login",
-      site: "https://gabriel-leal.github.io/login/"
+      alt: "projeto de tela de Cadastro de Usuários com React",
+      site: "https://gabriel-leal.github.io/cadastro-React/"
     },
     {
       src: "assets/img/projects/lista-de-tarefas.png",
-      alt: "projeto de tela de login",
+      alt: "projeto de tela de lista de tarefas",
       site: "https://github.com/gabriel-leal/angular-lista-de-tarefas"
     },
     {
