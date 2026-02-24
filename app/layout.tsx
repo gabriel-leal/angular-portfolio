@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Gabriel Leal Menezes | Portfólio Full Stack',
+  title: 'Gabriel Leal Menezes',
   description: 'Desenvolvedor Full Stack com foco em Python e React.'
 };
 

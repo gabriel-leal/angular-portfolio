@@ -1,23 +1,22 @@
-import {
-  Boxes,
-  Braces,
-  CloudCog,
-  Code2,
-  Database,
-  Docker,
-  Github,
-  Linkedin,
-  MonitorCog,
-  Server
-} from 'lucide-react';
-import { ContactForm } from '@/components/ContactForm';
+//import { ContactForm } from '@/components/ContactForm';
 import { MouseGlow } from '@/components/MouseGlow';
 import { Navbar } from '@/components/Navbar';
 import { ProjectsSection } from '@/components/ProjectsSection';
+import { ExperiencesSection } from '@/components/ExperiencesSection';
 import { SectionReveal } from '@/components/SectionReveal';
 import { technologies } from '@/data/portfolio';
+import { FaDocker, FaGithub, FaLinkedin, FaPython, FaReact, FaAngular, FaWhatsapp } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
+import { SiFastapi } from "react-icons/si";
+import { GrMysql } from "react-icons/gr";
+import { SiGithubactions } from "react-icons/si";
+import { BiLogoTypescript } from "react-icons/bi";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiPostgresql } from "react-icons/si";
+import { SiTsnode } from "react-icons/si";
+import Image from "next/image";
 
-const techIcons = [Code2, Braces, Server, MonitorCog, Docker, Database, CloudCog, Boxes];
+const techIcons = [FaPython, SiFastapi, SiTsnode, FaReact, RiNextjsFill, FaAngular, FaDocker, GrMysql, SiPostgresql, SiGithubactions, BiLogoTypescript, RiTailwindCssFill];
 
 export default function HomePage() {
   return (
@@ -28,8 +27,18 @@ export default function HomePage() {
       <section className="section-container relative z-10 pt-36">
         <SectionReveal>
           <div className="max-w-3xl space-y-6">
-            <p className="text-sm uppercase tracking-[0.2em] text-accent">Portfólio profissional</p>
-            <h1 className="text-4xl font-bold leading-tight md:text-6xl">Gabriel Leal Menezes</h1>
+            <div className="flex flex-col items-center md:items-start gap-6">
+              <Image
+                src="/images/gabriel.png"
+                alt="Gabriel Leal Menezes"
+                width={160}
+                height={160}
+                className="rounded-full object-cover border-4 border-accent shadow-glow transition duration-300 hover:scale-105"
+              />
+              <h1 className="text-4xl font-bold leading-tight md:text-6xl text-center md:text-left">
+                Gabriel Leal Menezes
+              </h1>
+            </div>
             <h2 className="text-2xl text-foreground/80 md:text-3xl">
               Desenvolvedor Full Stack com foco em Python e React
             </h2>
@@ -44,6 +53,9 @@ export default function HomePage() {
               <a href="#contato" className="rounded-lg border border-white/20 px-6 py-3 font-semibold">
                 Contato
               </a>
+              <a href="https://menezesdigital.com.br/assets/pdf/Curr%C3%ADculo%20Gabriel%20Leal%20Menezes.pdf" className="rounded-lg border-2 border-accent px-6 py-3 font-semibold text-accent hover:bg-accent hover:text-white transition-all duration-300" target="_blank" rel="noreferrer">
+                Download CV
+              </a>
             </div>
           </div>
         </SectionReveal>
@@ -53,11 +65,7 @@ export default function HomePage() {
         <SectionReveal>
           <h2 className="text-3xl font-bold">Sobre Mim</h2>
           <p className="mt-5 max-w-4xl text-foreground/75">
-            Sou desenvolvedor full stack com experiência no desenvolvimento de soluções digitais sob medida,
-            atuando da modelagem backend à construção de interfaces ricas e responsivas. Tenho forte atuação com
-            Python e FastAPI para APIs performáticas e seguras, além de React e Angular para frontends modernos.
-            Também possuo vivência com CI/CD, Docker e bancos MySQL, garantindo entregas consistentes e
-            escaláveis.
+           Sou <strong>Gabriel Leal Menezes</strong>, estudante de <strong>Sistemas de Informação na UNIFRAN (5º semestre)</strong>, com foco em desenvolvimento Full Stack utilizando Python com FastAPI no backend e React/Angular no frontend. Tenho 20 anos e sou apaixonado por tecnologia, buscando constantemente aprimorar minhas habilidades através de projetos práticos, APIs robustas e interfaces modernas. Já desenvolvi soluções completas para eventos e sistemas internos, utilizando integração com banco de dados, autenticação, QR Code, consumo de APIs REST e controle de fluxo com guards e services. Estou pronto para colaborar em equipes de tecnologia, aprender com profissionais experientes e entregar resultados de qualidade.
           </p>
         </SectionReveal>
       </section>
@@ -79,9 +87,20 @@ export default function HomePage() {
         </SectionReveal>
       </section>
 
+      <section id="experiences" className="section-container relative z-10">
+        <SectionReveal>
+          <h2 className="mb-8 text-3xl font-bold">
+          <SectionReveal>Experiências</SectionReveal>
+          </h2>
+          <ExperiencesSection />
+        </SectionReveal>
+      </section>
+
       <section id="projetos" className="section-container relative z-10">
         <SectionReveal>
-          <h2 className="mb-8 text-3xl font-bold">Projetos</h2>
+          <h2 className="mb-8 text-3xl font-bold">
+          <SectionReveal>Projetos</SectionReveal>
+          </h2>
           <ProjectsSection />
         </SectionReveal>
       </section>
@@ -95,15 +114,18 @@ export default function HomePage() {
                 Vamos transformar ideias em soluções digitais robustas e elegantes.
               </p>
               <div className="mt-6 space-y-3 text-sm">
-                <a className="flex items-center gap-2 text-foreground/80 hover:text-accent" href="https://github.com" target="_blank" rel="noreferrer">
-                  <Github size={18} /> GitHub
+                <a className="flex items-center gap-2 text-foreground/80 hover:text-accent" href="https://github.com/gabriel-leal" target="_blank" rel="noreferrer">
+                  <FaGithub size={18} /> GitHub
                 </a>
-                <a className="flex items-center gap-2 text-foreground/80 hover:text-accent" href="https://linkedin.com" target="_blank" rel="noreferrer">
-                  <Linkedin size={18} /> LinkedIn
+                <a className="flex items-center gap-2 text-foreground/80 hover:text-accent" href="https://www.linkedin.com/in/gabriellealmenezes/" target="_blank" rel="noreferrer">
+                  <FaLinkedin size={18} /> LinkedIn
+                </a>
+                <a className="flex items-center gap-2 text-foreground/80 hover:text-accent" href="https://wa.me/5516992137076" target="_blank" rel="noreferrer">
+                  <FaWhatsapp size={18} /> WhatsApp
                 </a>
               </div>
             </div>
-            <ContactForm />
+            {/* <ContactForm /> */}
           </div>
         </SectionReveal>
       </section>

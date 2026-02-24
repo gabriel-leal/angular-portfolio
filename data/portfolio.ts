@@ -1,14 +1,41 @@
 export const technologies = [
   'Python',
+  'FastAPI',
+  'node.ts',
   'React',
   'Next.js',
-  'FastAPI',
   'Angular',
   'Docker',
   'MySQL',
+  'PostgreSQL',
   'CI/CD',
   'TypeScript',
   'Tailwind CSS'
+];
+
+export type Experiences = {
+  title: string;
+  company: string
+  description: string;
+  technologies: string[];
+  period: string;
+};
+
+export const experiences: Experiences[] = [
+  {
+    title: 'Suporte Técnico',
+    company: 'Softpool Sistemas',
+    description: 'atuando com suporte técnico ao usuário, atualização de sistemas, manutenção de computadores e redes, instalação de windows, configuração de impressoras e configuração de SQL Server.',
+    technologies: ['Windows', 'SQL Server', 'Redes', 'Hardware'],
+    period: '02/2025 - 09/2025'
+  },
+  {
+    title: 'Desenvolvedor Visual Basic',
+    company: 'T&T Sistemas',
+    description: 'atuando com desenvolvimento de sistemas em Visual Basic, manutenção de sistemas legados, integração com banco de dados SQL Server, desenvolvimento de relatórios com Crystal Reports e suporte técnico aos usuários.',
+    technologies: ['vb6', 'SQL Server', 'Crystal Reports', 'Hardware'],
+    period: '09/2025 - atual'
+  },
 ];
 
 export type Project = {
@@ -21,35 +48,35 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: 'Plataforma de Gestão Comercial',
+    title: 'projeto de tela de Cadastro de Usuários com React',
     description:
-      'Sistema web para controle de vendas, estoque e indicadores em tempo real com dashboard analítico.',
-    technologies: ['React', 'FastAPI', 'MySQL', 'Docker'],
-    liveUrl: 'https://menezesdigital.com.br',
-    githubUrl: 'https://github.com/'
+      'tela de cadastro de usuários com React',
+    technologies: ['React', 'TypeScript', 'CSS'],
+    liveUrl: 'https://gabriel-leal.github.io/cadastro-React/',
+    githubUrl: 'https://github.com/gabriel-leal/cadastro-React'
   },
   {
-    title: 'API de Automação de Processos',
+    title: 'Inscrição de um evento musical',
     description:
-      'Arquitetura backend robusta para automação de tarefas operacionais, integração com serviços e filas.',
-    technologies: ['Python', 'FastAPI', 'Docker', 'CI/CD'],
-    liveUrl: 'https://menezesdigital.com.br',
-    githubUrl: 'https://github.com/'
+      'tela de inscrição de um evento musical com python e FastAPI com validação de QR code e frontend com Angular',
+    technologies: ['Python', 'FastAPI', 'Docker', 'Angular', 'mysql'],
+    liveUrl: '',
+    githubUrl: 'https://github.com/gabriel-leal/musical'
   },
   {
-    title: 'Portal Institucional Moderno',
+    title: 'projeto acadêmico, gerador de Qr Code em python!',
     description:
-      'Website performático com experiência responsiva, SEO otimizado e interface moderna orientada à conversão.',
-    technologies: ['Next.js', 'React', 'Tailwind CSS', 'TypeScript'],
-    liveUrl: 'https://menezesdigital.com.br',
-    githubUrl: 'https://github.com/'
+      'projeto acadêmico de geração de QR Code em python',
+    technologies: ['Python', 'QR Code'],
+    liveUrl: 'https://menezesdigital.com.br/qrcode',
+    githubUrl: ''
   },
   {
-    title: 'Painel Administrativo Corporativo',
+    title: 'API de Wokout',
     description:
-      'Aplicação para monitoramento de operações, permissões avançadas e integrações internas com pipelines.',
-    technologies: ['Angular', 'TypeScript', 'MySQL', 'CI/CD'],
-    liveUrl: 'https://menezesdigital.com.br',
-    githubUrl: 'https://github.com/'
+      'projeto acadêmico de API de Wokout em Python',
+    technologies: ['Python', 'FastAPI', 'postgreSQL'],
+    liveUrl: '',
+    githubUrl: 'https://github.com/gabriel-leal/workout_api-main'
   }
 ];
