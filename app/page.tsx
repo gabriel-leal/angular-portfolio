@@ -18,6 +18,34 @@ import Image from "next/image";
 
 const techIcons = [FaPython, SiFastapi, SiTsnode, FaReact, RiNextjsFill, FaAngular, FaDocker, GrMysql, SiPostgresql, SiGithubactions, BiLogoTypescript, RiTailwindCssFill];
 
+function calculateAge(birthDate: string): number {
+  const today = new Date();
+  const birth = new Date(birthDate);
+
+  let age = today.getFullYear() - birth.getFullYear();
+
+  const monthDifference = today.getMonth() - birth.getMonth();
+
+  if (
+    monthDifference < 0 || 
+    (monthDifference === 0 && today.getDate() < birth.getDate())
+  ) {
+    age--;
+  }
+
+  return age;
+}
+
+function calculateCollegeSemester(startDate: string): number {
+  const today = new Date();
+  const start = new Date(startDate);
+
+  let months = (today.getFullYear() - start.getFullYear()) * 12;
+  months += today.getMonth() - start.getMonth();
+
+  return Math.floor(months / 6) + 1;
+}
+
 export default function HomePage() {
   return (
     <main id="home" className="relative min-h-screen overflow-x-hidden bg-background">
@@ -64,9 +92,32 @@ export default function HomePage() {
       <section id="sobre" className="section-container relative z-10">
         <SectionReveal>
           <h2 className="text-3xl font-bold">Sobre Mim</h2>
-          <p className="mt-5 max-w-4xl text-foreground/75">
-           Sou <strong>Gabriel Leal Menezes</strong>, estudante de <strong>Sistemas de Informação na UNIFRAN (5º semestre)</strong>, com foco em desenvolvimento Full Stack utilizando Python com FastAPI no backend e React/Angular no frontend. Tenho 20 anos e sou apaixonado por tecnologia, buscando constantemente aprimorar minhas habilidades através de projetos práticos, APIs robustas e interfaces modernas. Já desenvolvi soluções completas para eventos e sistemas internos, utilizando integração com banco de dados, autenticação, QR Code, consumo de APIs REST e controle de fluxo com guards e services. Estou pronto para colaborar em equipes de tecnologia, aprender com profissionais experientes e entregar resultados de qualidade.
-          </p>
+          {calculateCollegeSemester("2023-02-01") < 8 && (
+            <p className="mt-5 max-w-4xl text-foreground/75">
+              Sou <strong>Gabriel Leal Menezes</strong>, estudante de{" "}
+              <strong>
+                Sistemas de Informação na UNIFRAN (
+                {calculateCollegeSemester("2023-02-01")}º semestre)
+              </strong>
+              , com foco em desenvolvimento Full Stack utilizando Python com
+              FastAPI no backend e React/Angular no frontend. Tenho{" "}
+              {calculateAge("2004-09-08")} anos e sou apaixonado por tecnologia,
+              buscando constantemente aprimorar minhas habilidades através de
+              projetos práticos, APIs robustas e interfaces modernas.
+            </p>
+          ) || (
+            <p className="mt-5 max-w-4xl text-foreground/75">
+              Sou <strong>Gabriel Leal Menezes</strong>, formado em{" "}
+              <strong>
+                Sistemas de Informação na UNIFRAN (8 semestres) - 2026
+              </strong>
+              , com foco em desenvolvimento Full Stack utilizando Python com
+              FastAPI no backend e React/Angular no frontend. Tenho{" "}
+              {calculateAge("2004-09-08")} anos e sou apaixonado por tecnologia,
+              buscando constantemente aprimorar minhas habilidades através de
+              projetos práticos, APIs robustas e interfaces modernas.
+            </p>
+          )}
         </SectionReveal>
       </section>
 
